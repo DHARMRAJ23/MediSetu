@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axiosInstance from "../utils/axiosInstance";
-import GlobalLoader from "../Componets/Loader/GlobalLoader";
+import GlobalLoader from "../Components/Loader/GlobalLoader";
 
 const AllDoctorDetails = () => {
   const [doctordata, setDoctorData] = useState([]);

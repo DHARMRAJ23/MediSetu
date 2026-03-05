@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import DraggableDialog from "../../Componets/DraggableDialog";
+import DraggableDialog from "../../Components/DraggableDialog";
 import { message } from "antd";
 import axiosInstance from "../../utils/axiosInstance";
 const AllAppointments = () => {

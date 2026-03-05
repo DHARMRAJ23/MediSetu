@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { message } from "antd";
-import Imagepreview from "../Componets/ImagePreview/Imagepreview";
+import Imagepreview from "../Components/ImagePreview/Imagepreview";
 import axiosInstance from "../utils/axiosInstance";
 const EditProfile = () => {
   const navigate = useNavigate();

@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import DoctorContext from '../../contextApi/DoctorContext'
 import { Link, useNavigate } from 'react-router-dom'
 import { message } from "antd";
-import DraggableDialog from '../../Componets/DraggableDialog';
+import DraggableDialog from '../../Components/DraggableDialog';
 import axiosInstance from '../../utils/axiosInstance';
 const DoctorList = () => {
   const { backendUrl, admintoken } = useContext(DoctorContext);

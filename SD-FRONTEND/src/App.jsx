@@ -15,10 +15,11 @@ import EditProfile from "./Pages/EditProfile";
 import "react-toastify/dist/ReactToastify.css";
 import DoctorList from "./Admin/pages/DoctorList";
 import AllAppointments from "./Admin/pages/AllAppointments";
-import AddDcotor from "./Admin/pages/AddDcotor";
+import AddDoctor from "./Admin/pages/AddDoctor";
 import EditDoctorDetails from "./Admin/pages/EditDoctorDetails";
-import Dashboard from "./Admin/Componets/Hero/Hero";
-import GlobalLoader from "./Componets/Loader/GlobalLoader";
+import Dashboard from "./Admin/Components/Hero/Hero";
+import GlobalLoader from "./Components/Loader/GlobalLoader";
+import AdminRoute from "./Components/AdminRoute";
 
 function App() {
 
@@ -49,13 +50,13 @@ function App() {
           <Route path="appoinment/:id" element={<DoctorDetails />} />
           <Route path="my-appoinment" element={<MyAppoinments />} />
           <Route path="edit-profile/:id" element={<EditProfile />} />
-          <Route path="doctor-list" element={<DoctorList />} />
-          <Route path="dashboard" element={<Dashboard />} />
-          <Route path="all-appointment" element={<AllAppointments />} />
-          <Route path="add-doctor" element={<AddDcotor />} />
+          <Route path="doctor-list" element={<AdminRoute><DoctorList /></AdminRoute>} />
+          <Route path="dashboard" element={<AdminRoute><Dashboard /></AdminRoute>} />
+          <Route path="all-appointment" element={<AdminRoute><AllAppointments /></AdminRoute>} />
+          <Route path="add-doctor" element={<AdminRoute><AddDoctor /></AdminRoute>} />
           <Route
             path="doctor-list/edit-doctordetails/:id"
-            element={<EditDoctorDetails />}
+            element={<AdminRoute><EditDoctorDetails /></AdminRoute>}
           />
           <Route path="*" element={<NotFound />} />
         </Route>

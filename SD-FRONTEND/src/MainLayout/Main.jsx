@@ -1,8 +1,8 @@
 import React from "react";
-import Navbar from "../Componets/Header/Navbar";
-import Footer from "../Componets/Footer/Footer";
+import Navbar from "../Components/Header/Navbar";
+import Footer from "../Components/Footer/Footer";
 import { Outlet } from "react-router-dom";
-import Sidebar from "../Admin/Componets/Sidebar/Sidebar";
+import Sidebar from "../Admin/Components/Sidebar/Sidebar";
 
 const Main = () => {
   const admin = localStorage.getItem("role");

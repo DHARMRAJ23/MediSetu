@@ -12,7 +12,7 @@ const MiddelHero = () => {
   return (
     <section className="bg-white py-16">
       <div className="container mx-auto flex flex-col lg:flex-row items-center gap-12 px-4">
-        
+
         {/* Left Side: Text */}
         <div className="flex-1 flex flex-col gap-6 text-center lg:text-left">
           <h1 className="text-5xl font-bold text-gray-800 leading-tight">
@@ -68,8 +68,8 @@ const MiddelHero = () => {
           <h3 className="font-bold text-lg text-green-600">Easy Appointments</h3>
           <p className="text-gray-600 mt-2">Book consultations with a few clicks.</p>
         </div>
-        <div className="bg-orange-50 p-6 rounded-xl text-center shadow-sm">
-          <h3 className="font-bold text-lg text-orange-600">24/7 Support</h3>
+        <div className="bg-green-50 p-6 rounded-xl text-center shadow-sm">
+          <h3 className="font-bold text-lg text-green-600">24/7 Support</h3>
           <p className="text-gray-600 mt-2">Get help whenever you need it.</p>
         </div>
       </div>

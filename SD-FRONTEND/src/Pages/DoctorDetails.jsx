@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import Appoinment from "../Componets/Appoinments/Appoinment";
+import Appoinment from "../Components/Appoinments/Appoinment";
 import axiosInstance from "../utils/axiosInstance";
 const DoctorDetails = () => {
   const navigate = useNavigate();

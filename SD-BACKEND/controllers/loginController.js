@@ -1,12 +1,12 @@
-import signupmodel from "../models/singupmodel.js";
+import signupmodel from "../models/signupmodel.js";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import dotenv from 'dotenv'
 import cloudinary from "cloudinary";
 import streamifier from "streamifier";
-dotenv.config(); 
+dotenv.config();
 
- 
+
 export const loginUser = async (req, res) => {
   try {
     const { email, password } = req.body;
@@ -27,15 +27,15 @@ export const loginUser = async (req, res) => {
       { expiresIn: "1h" }
     );
 
-      
-    
-         res.json({
+
+
+    res.json({
       success: true,
       message: "Login Successfully",
       token: logintoken
     });
-      
-   
+
+
   } catch (error) {
     console.log(error);
     res.json({ success: false, message: "Server error" });
@@ -66,6 +66,11 @@ export const getloginuser = async (req, res) => {
 export const updateprofile = async (req, res) => {
   try {
     const { id } = req.params;
+
+    // Match requester ID with the target ID
+    if (req.user.id !== id) {
+      return res.status(403).json({ success: false, message: "Unauthorized. You cannot edit someone else's profile." });
+    }
 
     // Copy all fields from req.body
     const updateData = { ...req.body };

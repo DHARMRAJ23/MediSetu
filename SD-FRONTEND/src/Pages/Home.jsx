@@ -1,12 +1,12 @@
 import React from "react";
-import Hero from "../Componets/Hero/Hero";
+import Hero from "../Components/Hero/Hero";
 
-import Specialist from "../Componets/SpecialistCatagary/Specialist";
-import Doctor from "../Componets/Doctors/Doctor";
-import MiddelHero from "../Componets/MiddelHero/MiddelHero";
-import Sidebar from "../Admin/Componets/Sidebar/Sidebar";
+import Specialist from "../Components/SpecialistCatagary/Specialist";
+import Doctor from "../Components/Doctors/Doctor";
+import MiddelHero from "../Components/MiddelHero/MiddelHero";
+import Sidebar from "../Admin/Components/Sidebar/Sidebar";
 import DoctorList from "../Admin/pages/DoctorList";
-import Dashboard from "../Admin/Componets/Hero/Hero";
+import Dashboard from "../Admin/Components/Hero/Hero";
 
 
 const Home = () => {
