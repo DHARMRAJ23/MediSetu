@@ -18,7 +18,7 @@ const Specialist = () => {
     },
     {
       name: "Neurologist",
-      img:" https://media.istockphoto.com/id/1279181570/vector/brain-and-neurology.jpg?s=612x612&w=0&k=20&c=zok3oI4aRzdFwPuE_nnDYFt9pfOMpdvRTMdLM8fGrDA=",
+      img: " https://media.istockphoto.com/id/1279181570/vector/brain-and-neurology.jpg?s=612x612&w=0&k=20&c=zok3oI4aRzdFwPuE_nnDYFt9pfOMpdvRTMdLM8fGrDA=",
     },
     {
       name: "Gastroenterologist",
@@ -37,7 +37,7 @@ const Specialist = () => {
       </div>
 
       {/* Horizontal Scrollable Cards */}
-      <div className="flex overflow-x-auto gap-6 py-4 scrollbar-hide">
+      <div className="flex overflow-x-auto md:justify-center gap-6 py-4 scrollbar-hide">
         {categories.map((category, idx) => (
           <div
             key={idx}

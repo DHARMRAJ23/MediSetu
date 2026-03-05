@@ -79,7 +79,7 @@ const DoctorDetails = () => {
                   <p className="text-gray-800 font-bold">
                     Appointment Fee:{" "}
                     <span className="text-indigo-600">
-                      ${doc.fees}
+                      ₹{doc.fees}
                     </span>
                   </p>
                   <div className="flex items-center justify-between">

@@ -50,8 +50,8 @@ const MiddelHero = () => {
         <div className="flex-1 flex justify-center lg:justify-end relative">
           <div className="bg-gray-100 rounded-2xl shadow-lg p-6 max-w-sm">
             <img
-              src="https://medisetu.vercel.app/assets/appointment_img-DzbZlMsi.png"
-              alt="Doctor Illustration"
+              src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&auto=format&fit=crop&q=80"
+              alt="Doctor Appointment"
               className="w-full object-contain rounded-lg"
             />
           </div>

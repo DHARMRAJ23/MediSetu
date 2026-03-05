@@ -15,7 +15,7 @@ const ContactUs = () => {
       body: formData,
     });
 
-    const data = await response.json(); 
+    const data = await response.json();
 
     if (data.success) {
       setResult("✅ Form submitted successfully!");
@@ -25,25 +25,25 @@ const ContactUs = () => {
       setResult("❌ " + data.message);
     }
   };
- 
+
 
   return (
     <div className="px-6 py-10 max-w-6xl mx-auto bg-zinc-50 ">
       <div className="grid md:grid-cols-2 gap-8 mb-12">
- 
+
         <div className="space-y-6 bg-white shadow-lg rounded-2xl p-6">
           <h1 className="text-3xl font-bold text-green-700">Hospital Address</h1>
           <p className="text-gray-700">
-            City Care Hospital <br />
-            123 Wellness Avenue, <br />
-            Downtown, New York, NY 10001
+            MediSetu Hospital <br />
+            Near Madhapar Chowkdi <br />
+            Rajkot 36003
           </p>
 
           <h1 className="text-2xl font-semibold text-green-700">Phone Numbers</h1>
           <p className="text-gray-700">
-            <strong>Emergency (24/7):</strong> +1 (800) 123-4567 <br />
-            <strong>General Inquiries:</strong> +1 (212) 555-7890 <br />
-            <strong>Appointments:</strong> +1 (212) 555-7891
+            <strong>Emergency (24/7):</strong> +91 54321 09876 <br />
+            <strong>General Inquiries:</strong> +91 90876 54321 <br />
+            <strong>Appointments:</strong> +91 98765 43210
           </p>
 
           <h1 className="text-2xl font-semibold text-green-700">Email</h1>
@@ -81,7 +81,7 @@ const ContactUs = () => {
           <p className="text-gray-700">Sunday & Holidays: Closed</p>
         </div>
 
-  
+
         <div className="bg-white shadow-lg rounded-2xl p-6">
           <h1 className="text-3xl font-bold text-center text-green-700 mb-6">
             Contact Us

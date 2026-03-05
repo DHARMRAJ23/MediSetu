@@ -96,16 +96,15 @@ const AllDoctorDetails = () => {
                 </p>
 
                 <p className="text-gray-900 font-bold mt-1 text-base">
-                  ${item.fees}{" "}
+                  ₹{item.fees}{" "}
                   <span className="text-sm text-gray-500">/ appointment</span>
                 </p>
 
                 <span
-                  className={`mt-2 sm:mt-3 inline-block px-3 py-1 rounded-full text-xs sm:text-sm font-semibold ${
-                    item.available
+                  className={`mt-2 sm:mt-3 inline-block px-3 py-1 rounded-full text-xs sm:text-sm font-semibold ${item.available
                       ? "bg-emerald-100 text-emerald-600"
                       : "bg-rose-100 text-rose-600"
-                  }`}
+                    }`}
                 >
                   {item.available ? "Available" : "Not Available"}
                 </span>

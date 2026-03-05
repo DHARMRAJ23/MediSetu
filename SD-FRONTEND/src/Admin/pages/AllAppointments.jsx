@@ -78,7 +78,7 @@ const AllAppointments = () => {
                 <span>{item.time || ""}</span>
               </p>
               <p>{item.doctorname || "-"}</p>
-              <p className="text-green-600 font-semibold">${item.fees || "0"}</p>
+              <p className="text-green-600 font-semibold">₹{item.fees || "0"}</p>
               <div className="flex justify-center">
                 <button
                   className="px-3 py-1 text-xs rounded-lg bg-red-100 text-red-600 hover:bg-red-200 transition"
@@ -110,7 +110,7 @@ const AllAppointments = () => {
               </div>
               <p><span className="font-medium">Age:</span> {item.Patient_details?.age || "-"}</p>
               <p><span className="font-medium">Doctor:</span> {item.doctorname || "-"}</p>
-              <p><span className="font-medium text-green-600">Fees:</span> ${item.fees || "0"}</p>
+              <p><span className="font-medium text-green-600">Fees:</span> ₹{item.fees || "0"}</p>
               <button
                 className="w-full mt-2 bg-red-100 text-red-600 px-3 py-2 rounded-lg hover:bg-red-200 transition"
                 onClick={() => handleCancel(item._id)}

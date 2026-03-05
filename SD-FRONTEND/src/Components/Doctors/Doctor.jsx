@@ -66,9 +66,8 @@ const Doctor = () => {
               />
               {/* Availability Badge */}
               <span
-                className={`absolute top-3 right-3 px-3 py-1 rounded-full text-xs font-medium ${
-                  doctor.available ? "bg-green-100 text-green-800" : "bg-red-100 text-red-800"
-                }`}
+                className={`absolute top-3 right-3 px-3 py-1 rounded-full text-xs font-medium ${doctor.available ? "bg-green-100 text-green-800" : "bg-red-100 text-red-800"
+                  }`}
               >
                 {doctor.available ? "Available" : "Not Available"}
               </span>
@@ -79,7 +78,7 @@ const Doctor = () => {
               <p className="text-indigo-600 font-medium mt-1">{doctor.speciality}</p>
               <p className="text-gray-500 text-sm mt-1">{doctor.experience}</p>
               <p className="text-gray-700 font-semibold mt-2">
-                ${doctor.fees} <span className="text-sm text-gray-400">/appointment</span>
+                ₹{doctor.fees} <span className="text-sm text-gray-400">/appointment</span>
               </p>
             </div>
           </div>
@@ -92,7 +91,7 @@ const Doctor = () => {
           className="bg-green-700 text-white font-semibold py-3 px-6 rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-1 flex items-center gap-2"
           onClick={handleViewAll}
         >
-          {isLoader ? <ClipLoader color="#fff" size={20} />  : "View All Doctors"}
+          {isLoader ? <ClipLoader color="#fff" size={20} /> : "View All Doctors"}
         </button>
       </div>
     </div>

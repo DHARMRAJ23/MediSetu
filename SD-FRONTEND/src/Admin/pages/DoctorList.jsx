@@ -77,9 +77,8 @@ const DoctorList = () => {
                   className="w-full h-full object-cover"
                 />
                 <span
-                  className={`absolute top-3 right-3 px-3 py-1 rounded-full text-xs font-bold ${
-                    doctor.isActive ? 'bg-green-100 text-green-600' : 'bg-red-100 text-red-600'
-                  }`}
+                  className={`absolute top-3 right-3 px-3 py-1 rounded-full text-xs font-bold ${doctor.isActive ? 'bg-green-100 text-green-600' : 'bg-red-100 text-red-600'
+                    }`}
                 >
                   {doctor.isActive ? "Available" : "Not Available"}
                 </span>
@@ -92,7 +91,7 @@ const DoctorList = () => {
                   <p className="text-sm text-indigo-600 font-medium mt-1">{doctor.specialty}</p>
                   <p className="text-gray-500 text-sm mt-1">{doctor.experience}</p>
                   <p className="text-gray-700 font-semibold mt-2">
-                    ${doctor.fees} <span className="text-sm text-gray-500">/ appointment</span>
+                    ₹{doctor.fees} <span className="text-sm text-gray-500">/ appointment</span>
                   </p>
                 </div>
 
